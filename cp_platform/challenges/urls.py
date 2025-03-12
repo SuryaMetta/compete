@@ -15,4 +15,5 @@ urlpatterns = [
      path("admin/", admin.site.urls),
     path("", home, name="home"),  # Default homepage
     path("login/", views.custom_login, name="custom_login"),
+    path("register/", views.register, name="register"),  
 ]
