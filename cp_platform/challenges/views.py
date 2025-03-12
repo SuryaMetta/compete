@@ -9,6 +9,10 @@ def home(request):
     return HttpResponse("<h1>Welcome to the Competitive Programming Platform!</h1>")
 
 
+def some_view(request):
+    from .forms import SubmissionForm  # Move import inside function
+    form = SubmissionForm()
+    
 # User Registration
 def register(request):
     if request.method == "POST":
