@@ -1,0 +1,6 @@
+<h1>Leaderboard</h1>
+<ul>
+    {% for submission in top_users %}
+        <li>{{ submission.user.username }} - {{ submission.problem.title }} ({{ submission.created_at }})</li>
+    {% endfor %}
+</ul>
