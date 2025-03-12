@@ -3,6 +3,11 @@ from django.contrib.auth import login, authenticate, logout # type: ignore
 from django.contrib.auth.decorators import login_required # type: ignore
 from .models import Problem, Submission, Contest
 from .forms import RegisterForm, SubmissionForm
+from django.http import HttpResponse
+
+def home(request):
+    return HttpResponse("<h1>Welcome to the Competitive Programming Platform!</h1>")
+
 
 # User Registration
 def register(request):
