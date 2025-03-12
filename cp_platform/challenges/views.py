@@ -8,6 +8,8 @@ from django.http import HttpResponse
 def home(request):
     return HttpResponse("<h1>Welcome to the Competitive Programming Platform!</h1>")
 
+def custom_login(request):
+    return render(request, "challenges/login.html")
 
 def some_view(request):
     from .forms import SubmissionForm  # Move import inside function
