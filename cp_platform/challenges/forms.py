@@ -9,3 +9,7 @@ class RegisterForm(forms.ModelForm):
         fields = ['username', 'email', 'password']
 
 
+class SubmissionForm(forms.ModelForm):
+    class Meta:
+        model = Submission
+        fields = ['code', 'language']
