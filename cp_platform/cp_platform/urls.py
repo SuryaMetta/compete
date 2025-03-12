@@ -20,5 +20,5 @@ from django.urls import path, include
 
 urlpatterns = [
     path("admin/", admin.site.urls),  # Admin panel
-    path("", include("myapp.urls")),  # Connects your app's URLs
+    path("", include("challenges.urls")),  # Connects your app's URLs
 ]
